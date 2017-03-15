@@ -12,3 +12,13 @@ In Lock method internally, start() and exit() method calls will be there. if one
 
 A single thread can call n number of times start() and exit() but at same time it both count should be equal.
 
+
+
+Check list
+
+Define a private static attribute in the "single instance" class.
+Define a public static accessor function in the class.
+Do "lazy initialization" (creation on first use) in the accessor function.
+Define all constructors to be protected or private.
+Clients may only use the accessor function to manipulate the Singleton.
+
